@@ -1,11 +1,9 @@
-const input1 = document.querySelector('#input1')! as HTMLInputElement;
-const input2 = document.querySelector('#input2')! as HTMLInputElement;
-const btn = document.querySelector('#btn')! as HTMLInputElement;
-
-function add(num1: number, num2: number) {
-    return num1 + num2;
+function add(n1: string, n2: string){
+    return n1 + n2;
 }
 
-btn.addEventListener('click', () => {
-    console.log(add(+input1.value, +input2.value));
-});
+const number1 : string = "5";
+const number2 : string = "2.8";
+
+const result = add(number1, number2);
+console.log(result);
